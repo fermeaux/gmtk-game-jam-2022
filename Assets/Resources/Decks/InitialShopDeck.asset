@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94fa1c45f4c52e2498e02d02347fc1d6, type: 3}
+  m_Name: InitialShopDeck
+  m_EditorClassIdentifier: 
+  dices:
+  - dice: {fileID: 11400000, guid: 8e6ab6990ec959d409b8bbf7cd669cd6, type: 2}
+    count: 3
+  - dice: {fileID: 11400000, guid: 584eb8a0dfdb1514b9ae8473af6bee26, type: 2}
+    count: 3
+  - dice: {fileID: 11400000, guid: 778a96639004e504b8e741ea78fdf001, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: 66f89febffe052f4db1b924ff29c71d4, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: 46faae2a644b46e47aa6442ad2e21d6b, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: ceeaedbb285c8a248a3c170720c74591, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: e92ccf8fe0059084c8e89782c6264022, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 6bde4e0384e259f469046f303d3273c1, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: c997d046dd349e9468a739be7e3c44c7, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: c631bc31ce00f774a96eeea4a9582675, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 196a8fa59e39ac64fa2b8a2dae43409f, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 6f9b076ad2220a241b8067e51e460ed9, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 579b78dce8205574cb09814e263f0dbe, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 16f897427aff823409392067ba67514b, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 74e9df9bd7e827340b04233cb43c32a7, type: 2}
+    count: 3
+  - dice: {fileID: 11400000, guid: 5dab437298472d541b6be9219b4174be, type: 2}
+    count: 3
+  - dice: {fileID: 11400000, guid: 0f8a501e58be5074f9cfff72150df1fe, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: 45dca2b18bc5a7749a2fd8114c23b634, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: 86642691a098d804ead1f632bba7f2a6, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: fa22d882848a7ca40b581314814e717e, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 8abd170ea6fdb744ba61583d616c3634, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 99b01f5fdd7bf1d4c8469e035bc76640, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: b7c0dcc7885375046b824c698955d552, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: d45ca4ab805bc59488741fb013afd556, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 239c410ea6476624bb4b18ac2f960cf3, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 14fcd46ccad211a4db7b3e856835eae6, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 5dccc4cf720b1434480696a2dbab4f49, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 2ec8911a8ab0f9942b6c92d843a35202, type: 2}
+    count: 3
+  - dice: {fileID: 11400000, guid: e87b72b2c93de3149a29cdb2daa69cee, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: 257df4093597adf4d823927a9ab5c733, type: 2}
+    count: 3
+  - dice: {fileID: 11400000, guid: 0f36d0cb5cfb21746ab88d1f86a56a70, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: 2aeeeafa15f026e46a8cae5dce30da27, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 2e6d7af7e3f0a324fa9eabe702e630df, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 09aca71055384334880c6b5719161e98, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: c4d8a679a91e28c488275915b5d674d7, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: ca4fcc2d0b47ba74299fd8b45c658cc5, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 5f1371082ed20854ea29fd6d5a74327e, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: dfcf7679f528f844f9f21ad73213b194, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: f235b2384c07a9b49b7907f384d304f5, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: af49b7942597c8a43b94fe011fc89c63, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 4ec6dc58b5745c345ba0b39c79be8b1f, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: c3249ccf98ec98e4ab51414204685d72, type: 2}
+    count: 3
+  - dice: {fileID: 11400000, guid: f1c6928913cb2fd42808279572748541, type: 2}
+    count: 3
+  - dice: {fileID: 11400000, guid: c043f42474cbc14438938e313bceedb1, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: d9ddadd17111c204abe84e2c786d264c, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: e40894d725ee74e468752ce3448fe294, type: 2}
+    count: 2
+  - dice: {fileID: 11400000, guid: 9feb10757afaaa847828a98b80ec692d, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: f9c5287b7bd0a034bbc4abcd3e815051, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: ba62ad80521b66648b03a2e28909098c, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: df34424f6321979428ea10610a312a12, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 82d1c76413ef95f42a39861b7539778a, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 74bb21fb7c8067d4a822530e3583a4ac, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 917f00e5068875e44ae6315fd07a9e60, type: 2}
+    count: 1
+  - dice: {fileID: 11400000, guid: 8e1273fd38f2e0e4a85ca13f4b1717b1, type: 2}
+    count: 1

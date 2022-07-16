@@ -19,7 +19,7 @@ MonoBehaviour:
   - effectsByDefault:
       effects:
       - type: 1
-        amount: 1
+        amount: 2
       combination: 0
     effectsByColor:
       effects: []
