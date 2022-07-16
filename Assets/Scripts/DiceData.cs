@@ -57,23 +57,23 @@ public enum DiceEffectCombination
 public class DiceEffect
 {
     public DiceEffectType type;
-    [Range(1, 8)] public int amount;
+    [Range(1, 8)] public int amount = 1;
 }
 
 public enum DiceEffectType
 {
-    Damage,
-    Gold,
-    Heal,
-    Draw,
-    Reroll,
-    AcquireTopDeck,
-    AcquireHand,
-    DrawAndDiscard,
-    Sacrifice,
-    HealByHero,
-    DamageByHero,
-    DamageByGuard,
-    Mobilize,
-    DamageByColor
+    Damage = 0,
+    Gold = 1,
+    Heal = 2,
+    Draw = 3,
+    Reroll = 4,
+    DrawAndDiscard = 7,
+    Sacrifice = 8,
+    HealByHero = 9,
+    DamageByHero = 10,
+    DamageByGuard = 11,
+    Mobilize = 12,
+    DamageByColor = 13,
+    DiscardToTopDeck = 14,
+    DiscardHeroToTopDeck = 15
 }

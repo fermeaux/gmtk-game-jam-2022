@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e7744943c9a2e4fafbb22b68fe6aec, type: 3}
+  m_Name: Drain of life
+  m_EditorClassIdentifier: 
+  price: 6
+  color: 2
+  type: 0
+  face:
+  - effectsByDefault:
+      effects:
+      - type: 0
+        amount: 8
+      - type: 8
+        amount: 1
+      combination: 0
+    effectsByColor:
+      effects:
+      - type: 3
+        amount: 1
+      combination: 0
+    effectsBySacrifice:
+      effects: []
+      combination: 0
+    health: 0
+    isGuard: 0
