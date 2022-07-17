@@ -1,79 +1,38 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
+using Board;
+using Flow;
+using Stats;
 using UnityEngine;
-using Random = UnityEngine.Random;
+using Utility;
 
-public class GameManager : MonoBehaviour
+namespace Game
 {
-    public static GameManager Instance;
-    public DeckData initialPlayerDeck;
-    public DeckData initialShopDeck;
-
-    private List<DiceData> _playerDeck;
-    private List<DiceData> _playerDiscardPile = new List<DiceData>();
-    private List<DiceData> _shopDeck;
-    private List<DiceData> _shop;
-
-    private void Awake()
+    [RequireComponent(typeof(BoardManager))]
+    [RequireComponent(typeof(FlowManager))]
+    public class GameManager : MonoBehaviour
     {
-        if (Instance != null)
-        {
-            DestroyImmediate(this);
-            return;
-        }
-        Instance = this;
-    }
-
-    private void Start()
-    {
-        _playerDeck = InitializeDeck(initialPlayerDeck);
-        _playerDeck = ShuffleDeck(_playerDeck);
+        public static GameManager Instance;
         
-        _shopDeck = InitializeDeck(initialShopDeck);
-        _shopDeck = ShuffleDeck(_shopDeck);
-
-        InitializeShop();
-    }
-
-    private List<DiceData> InitializeDeck(DeckData deckData)
-    {
-        var deck = new List<DiceData>();
-        deckData.dices.ForEach(exemplary =>
+        private void Awake()
         {
-            for (var i = 0; i < exemplary.count; i++)
+            if (Instance != null)
             {
-                deck.Add(exemplary.dice);
+                DestroyImmediate(this);
+                return;
             }
-        });
-        return deck;
-    }
-
-    private List<DiceData> ShuffleDeck(List<DiceData> deck)
-    {
-        var newDeck = new List<DiceData>();
-        while (deck.Count > 0)
-        {
-            var randomIndex = Random.Range(0, deck.Count);
-            newDeck.Add(deck[randomIndex]);
-            deck.RemoveAt(randomIndex);
+            Instance = this;
         }
-        return newDeck;
-    }
 
-    private void InitializeShop()
-    {
-        _shop = new List<DiceData>(5);
-        for (int i = 0; i < 5; i++)
+        private void Start()
         {
-            DrawShop(i);
+            StartCoroutine(InitializeGame());
         }
-    }
 
-    private void DrawShop(int placement)
-    {
-        if (_shopDeck.Count == 0) return;
-        _shop.Insert(placement, _shopDeck[0]);
-        _shopDeck.RemoveAt(0);
+        private IEnumerator InitializeGame()
+        {
+            yield return InstanceHelper.WaitForInstances();
+            StatManager.Instance.Initialize();
+            BoardManager.Instance.Initialize();
+        }
     }
 }

@@ -10,6 +10,7 @@ public class DiceData : ScriptableObject
     public DiceColor color;
     public DiceType type;
     public List<DiceFace> face;
+    public Material mat;
 }
 
 public enum DiceColor
