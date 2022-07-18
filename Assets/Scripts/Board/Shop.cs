@@ -6,14 +6,14 @@ namespace Board
 {
     public class Shop : MonoBehaviour
     {
-        [SerializeField] private ShopPlacements placements;
+        public ShopPlacements placements;
     }
 
     [Serializable]
     public class ShopPlacements
     {
-        [SerializeField] private Transform drawPile;
-        [SerializeField] private Transform discardPile;
-        [SerializeField] private List<Transform> shop;
+        public Transform drawPile;
+        public Transform discardPile;
+        public List<Transform> shop;
     }
 }

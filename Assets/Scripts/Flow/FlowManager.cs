@@ -10,7 +10,7 @@ namespace Flow
         public static FlowManager Instance;
         [SerializeField] private GameEvent onRunning;
         [SerializeField] private GameEvent onWaiting;
-        private readonly Queue<IFlowItem> _flowItems = new Queue<IFlowItem>();
+        private readonly Queue<IFlowCommand> _commands = new Queue<IFlowCommand>();
 
         private bool _isWaiting = true;
         private bool IsWaiting
@@ -35,21 +35,21 @@ namespace Flow
             StartCoroutine(FlowLoop());
         }
 
-        public void AddFlowItem(IFlowItem flowItem)
+        public void AddFlowCommand(IFlowCommand command)
         {
-            _flowItems.Enqueue(flowItem);
+            _commands.Enqueue(command);
         }
 
         private IEnumerator FlowLoop()
         {
             while (true)
             {
-                if (_flowItems.Count > 0)
+                if (_commands.Count > 0)
                 {
-                    IsWaiting = false;
-                    var flowItem = _flowItems.Dequeue();
-                    yield return flowItem.Execute();
-                    if (_flowItems.Count == 0) IsWaiting = true;
+                    if (IsWaiting) IsWaiting = false;
+                    var command = _commands.Dequeue();
+                    yield return command.Execute();
+                    if (_commands.Count == 0) IsWaiting = true;
                 }
                 yield return null;
             }

@@ -2,7 +2,7 @@
 
 namespace Flow
 {
-    public interface IFlowItem
+    public interface IFlowCommand
     {
         public IEnumerator Execute();
     }
